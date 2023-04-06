@@ -1,3 +1,8 @@
+/* #6B7A8F (gris) */
+/* #F7882F (naranja) */
+/* #f7C331 (amarillo) */
+/* #DCC7AA (beige) */
+
 /* Estilos generales  */
 body {
   font-family: 'Titillium Web', sans-serif;
@@ -28,6 +33,27 @@ a.dropdown-item {
 
 /* Seccion principal  */
 
+.contenedor-posicion{
+  position: relative;
+}
 .img-main {
   padding: 0px;
+}
+.superpuesto {
+  position: absolute;
+  z-index: 100;
+  top: 10%;
+}
+.texto-claro {
+  color: whitesmoke;
+}
+.presentacion {
+  max-width: 500px;
+  text-align: center;
+}
+.presentacion h1 {
+  font-size: 6rem;
+}
+.presentacion h2 {
+  font-size: 4rem;
 }
