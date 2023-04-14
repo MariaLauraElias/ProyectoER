@@ -31,6 +31,48 @@ a.dropdown-item {
   font-size: 1.5rem;
 }
 
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: #1b1b32;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
 /* Seccion principal  */
 
 .contenedor-posicion{
@@ -42,18 +84,115 @@ a.dropdown-item {
 .superpuesto {
   position: absolute;
   z-index: 100;
-  top: 10%;
+  top: 5%;
 }
 .texto-claro {
   color: whitesmoke;
+  text-shadow: 1px 1px 2px black;
 }
+
 .presentacion {
-  max-width: 500px;
+  max-width: 800px;
   text-align: center;
 }
 .presentacion h1 {
   font-size: 6rem;
+  margin-bottom: 0px;
 }
 .presentacion h2 {
   font-size: 4rem;
+}
+
+/* Proyectos */
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+.presentacion {
+  max-width: 600px;
+  text-align: center;
+}
+.presentacion h1 {
+  font-size: 5rem;
+  margin-bottom: 0px;
+}
+.presentacion h2 {
+  font-size: 3rem;
+  margin-bottom: 0px;
+}
+}
+
+
+@media screen and (max-width: 700px) {
+  .presentacion {
+    max-width: 500px;
+    text-align: center;
+  }
+  .presentacion h1 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+  }
+  .presentacion h2 {
+    font-size: 2rem;
+  }
+
+  .presentacion p {
+    font-size: 18px;
+  }
 }
